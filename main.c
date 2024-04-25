@@ -12,7 +12,7 @@ int i,j;
 }
 
 //Resource Request algorithm
-void res_request(int A[10][10],int N[10][10],int AV[10][10],int pid,int m){
+void res_request(int A[10][10],int N[10][10],int AV[1][10],int pid,int m){
 
         int reqmat[1][10];
         int i;
