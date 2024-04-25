@@ -42,7 +42,6 @@ void res_request(int A[10][10],int N[10][10],int AV[1][10],int pid,int m){
 
 //Safety algorithm
 int safety(int A[][10],int N[][10],int AV[1][10],int n,int m,int a[]){
-
         int i,j,k,x=0;
         int F[10],W[1][10];
         int pflag=0,flag=0;
