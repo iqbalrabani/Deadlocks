@@ -13,7 +13,6 @@ int i,j;
 
 //Resource Request algorithm
 void res_request(int A[10][10],int N[10][10],int AV[1][10],int pid,int m){
-
         int reqmat[1][10];
         int i;
         printf("\n Enter additional request :- \n");
@@ -40,6 +39,7 @@ void res_request(int A[10][10],int N[10][10],int AV[1][10],int pid,int m){
             N[pid][i]-=reqmat[0][i];
         }
 }
+
 //Safety algorithm
 int safety(int A[][10],int N[][10],int AV[1][10],int n,int m,int a[]){
 
@@ -77,7 +77,6 @@ int safety(int A[][10],int N[][10],int AV[1][10],int n,int m,int a[]){
 
 //Banker's Algorithm
 void accept(int A[][10],int N[][10],int M[10][10],int W[1][10],int *n,int *m){
-
         int i,j;
         printf("\n Enter total no. of processes : ");
         scanf("%d",n);
@@ -146,7 +145,7 @@ int main(){
                 if(ret == 0 )
                     exit(0);
         }
-    }else
+    } else
         exit(0);
     return 0;
 }
